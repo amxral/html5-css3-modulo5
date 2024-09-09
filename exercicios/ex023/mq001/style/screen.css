@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* Para Telas */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: darkslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+header h1 {
+    text-align: center;
+}
+menu {
+    width: 70px;
+}
+
+menu > ul {
+    display: none;
+}
+
+menu:hover > ul {
+    display: block;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+/* CORPO DO SITE */
+
+main {
+    text-align: left;
+    padding: 10px;
+    background-color: white;
+    width: 70vw;
+    margin: auto;
+    border-radius: 15px;
+}
+
+main h2 {
+    padding: 10px;
+}
+
+main p {
+    text-indent: 40px;
+    text-align: justify;
+    padding: 10px;
+}

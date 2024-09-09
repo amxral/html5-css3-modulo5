@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="1" autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required minlength="1" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Contato:</label>
+                <input type="tel" name="tel" id="itel" required minlength="8" maxlength="15" placeholder="(xx) xxxxx-xxxx">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p>
+            <label for="isu">Email:</label>
+            <input type="email" name="usu" id="iusu" required minlength="4" maxlength="20" size="20" placeholder="Preferência Gmail">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" size="15" placeholder="mínimo 8 caracteres">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+
+        <p>
+            <label for="iest">Estados: </label>
+            <select name="estados" id="iest" required>
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Estados Vizinhos">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="CE">Ceará</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="ipro">Profissão: </label>
+            <input type="text" name="prof" id="ipro" list="lstpro">
+            <datalist id="lstpro">
+                <option>Estelionatário</option>
+                <option>Ladrão</option>
+                <option>Agiota</option>
+                <option>Puta</option>
+                <option>Traficante</option>
+                <option>Aviãozinho</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

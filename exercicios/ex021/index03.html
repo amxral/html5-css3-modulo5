@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste Formulários</h1>
+
+    <!-- FORMULÁRIO -->
+
+    <form action="cadastro.php" method="get">
+        <!-- NOME DO ALUNO -->
+        <p>
+            <label for="ialuno">Aluno:</label>
+            <input type="text" name="aluno" id="ialuno" placeholder="Nome completo" required minlength="1">
+        </p>
+
+        <!-- NOTA DO ALUNO -->
+        <p>
+            <label for="inota">Nota:</label>
+            <input type="number" name="nota" id="inonta" required step="0.1" min="0" max="10">
+        </p>
+
+        <!-- PERÍODO DA NOTA -->
+        <p>
+            <label for="imes">Período:</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+
+        <!-- DATA DA PROVA -->
+        <p>
+            <label for="idia">Data da Prova:</label>
+            <input type="date" name="data" id="idia">
+        </p>
+
+        <!-- HORÁRIO DA PROVA -->
+        <p>
+            <label for="ihora">Horario da Prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

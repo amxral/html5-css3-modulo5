@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints 
+
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 769px até 992px
+Desktop: 993px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+/* MEDIA PARA IMPRESSÃO */
+@media print {
+
+    main {
+        border: 2px solid black;
+        width: 80vw;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-shadow: none;
+    }
+
+    body::after {
+        content: 'Exercício feito por Amaral no dia 05/03/2024';
+        font-size: 0.5em;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#pc { display: none; }
+    img#print { display: block; }
+    img#tv { display: none; }
+}
+
+/* MEDIA TABLET */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        background-image: url(imagens/back-tablet.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#pc { display: none; }
+    img#print { display: none; }
+    img#tv { display: none; }
+}
+
+/* MEDIA DESKTOP */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background-image: url(imagens/back-pc.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#pc { display: block; }
+    img#print { display: none; }
+    img#tv { display: none; }
+}
+
+/* MEDIA GRANDES TELAS */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(imagens/back-tv.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#pc { display: none; }
+    img#print { display: none; }
+    img#tv { display: block; }
+}
